@@ -60,6 +60,9 @@ This is a Flask-based REST API for managing a library system. It allows you to p
    ```
    The application will start at `http://127.0.0.1:5000`.
 
+![image](https://github.com/user-attachments/assets/08d0fb81-df05-4831-aa2c-e67516c3550f)
+
+
 ---
 
 ## Testing Instructions
@@ -76,7 +79,8 @@ To test the API, follow the steps below:
      ```
 
    **Screenshot:**
-   *(Attach a screenshot of the Postman request and response here)*
+   ![image](https://github.com/user-attachments/assets/edf3d604-f6a5-4fb1-9e92-8158d0cd3078)
+
 
 ---
 
@@ -86,8 +90,8 @@ To test the API, follow the steps below:
    - Body (JSON):
      ```json
      {
-         "title": "1984",
-         "author": "George Orwell",
+         "title": "Marathi pustak 2001",
+         "author": "pathak sir",
          "isbn": "1234567890",
          "available_copies": 5
      }
@@ -100,7 +104,8 @@ To test the API, follow the steps below:
      ```
 
    **Screenshot:**
-   *(Attach a screenshot of the Postman request and response here)*
+   ![image](https://github.com/user-attachments/assets/448e1bd1-8afa-43ef-a9f1-1dfe47cd879e)
+
 
 ---
 
@@ -110,8 +115,8 @@ To test the API, follow the steps below:
    - Body (JSON):
      ```json
      {
-         "title": "1984 (Updated)",
-         "author": "George Orwell",
+         "title": "Marathi Pustak 2001 (Updated)",
+         "author": "pathak sir",
          "isbn": "1234567890",
          "available_copies": 10
      }
@@ -124,7 +129,8 @@ To test the API, follow the steps below:
      ```
 
    **Screenshot:**
-   *(Attach a screenshot of the Postman request and response here)*
+   ![image](https://github.com/user-attachments/assets/007ccefb-976f-48a9-8e33-0688f13af1b9)
+
 
 ---
 
@@ -139,7 +145,8 @@ To test the API, follow the steps below:
      ```
 
    **Screenshot:**
-   *(Attach a screenshot of the Postman request and response here)*
+   ![image](https://github.com/user-attachments/assets/7fe714dc-791d-485b-8d41-0cfded25dac0)
+
 
 ---
 
@@ -152,7 +159,7 @@ To test the API, follow the steps below:
      ```
 
    **Screenshot:**
-   *(Attach a screenshot of the Postman request and response here)*
+   ![image](https://github.com/user-attachments/assets/0a0b5117-3626-469b-b254-f8e842a8f135)
 
 ---
 
@@ -162,8 +169,8 @@ To test the API, follow the steps below:
    - Body (JSON):
      ```json
      {
-         "name": "John Doe",
-         "email": "john.doe@example.com",
+         "name": "Dharmesh Kashyap",
+         "email": "dharmeshkashyap46@gmail.com",
          "joined_date": "2024-12-12"
      }
      ```
@@ -175,7 +182,8 @@ To test the API, follow the steps below:
      ```
 
    **Screenshot:**
-   *(Attach a screenshot of the Postman request and response here)*
+   ![image](https://github.com/user-attachments/assets/320d6997-f30f-41db-8b58-276a68a08399)
+
 
 ---
 
@@ -186,7 +194,7 @@ To test the API, follow the steps below:
      ```json
      {
          "username": "admin",
-         "password": "password"
+         "password": "secretPass"
      }
      ```
    - Expected Response:
@@ -197,7 +205,8 @@ To test the API, follow the steps below:
      ```
 
    **Screenshot:**
-   *(Attach a screenshot of the Postman request and response here)*
+   ![image](https://github.com/user-attachments/assets/0065fa97-06e9-4670-95f2-fc157ab1b75f)
+
 
 ---
 
@@ -211,9 +220,9 @@ To access secured endpoints, include the token in the **Authorization** header:
 ---
 
 ## Screenshots
-Attach your screenshots for each of the endpoints tested in Postman.
+![image](https://github.com/user-attachments/assets/dd133626-2d55-4336-949e-5e1d357bcb35)
+
 
 ---
 
-Let me know if you need further assistance or want to make any additional edits!
 
