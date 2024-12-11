@@ -1,6 +1,7 @@
 from flask import Blueprint, request, jsonify
 from extensions import db
 from models import Book, Member
+from datetime import datetime
 
 api = Blueprint('api', __name__)
 
@@ -45,6 +46,10 @@ def get_members():
 @api.route('/members', methods=['POST'])
 def add_member():
     data = request.json
+    # Convert 'joined_date' to a Python date object
+    if 'joined_date' in data:
+        data['joined_date'] = datetime.strptime(data['joined_date'], '%Y-%m-%d').date()
+    
     member = Member(**data)
     db.session.add(member)
     db.session.commit()
