@@ -5,7 +5,6 @@ from datetime import datetime
 
 api = Blueprint('api', __name__)
 
-# Books API
 @api.route('/books', methods=['GET'])
 def get_books():
     books = Book.query.all()
@@ -37,7 +36,6 @@ def delete_book(book_id):
     db.session.commit()
     return jsonify({"message": "Book deleted successfully"})
 
-# Members API
 @api.route('/members', methods=['GET'])
 def get_members():
     members = Member.query.all()
@@ -46,7 +44,6 @@ def get_members():
 @api.route('/members', methods=['POST'])
 def add_member():
     data = request.json
-    # Convert 'joined_date' to a Python date object
     if 'joined_date' in data:
         data['joined_date'] = datetime.strptime(data['joined_date'], '%Y-%m-%d').date()
     
